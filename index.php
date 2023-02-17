@@ -59,7 +59,8 @@ echo "Lunghezza paragrafo originale: " . strlen($paragrafo) . "<br>";
 
 
 // Sostituisco la parola da censurare con tre asterischi 
-$paragrafo_censurato = str_ireplace($_GET['censura'], '***', $paragrafo);
+
+$paragrafo_censurato = preg_replace('/\b'.$_GET['censura'].'\b/i', '***', $paragrafo);
 
 // Stampo il paragrafo censurato e la sua lunghezza
 echo "<br>Paragrafo censurato: <br>";

@@ -9,6 +9,8 @@
 <body>
   
 <?php
+ 
+// SENZA GET
 
 // Variabile con un paragrafo di testo
 // $paragrafo = "Here's to us, here's to love
@@ -30,6 +32,8 @@
 // echo $paragrafo_modificato . "<br>";
 // echo "Lunghezza del paragrafo censurato: " . strlen($paragrafo_modificato) . "<br>";
 
+
+// CON GET
 
 $paragrafo = "Here's to us, here's to love
 All the times, that we messed up

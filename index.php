@@ -49,7 +49,7 @@ echo "Lunghezza paragrafo originale: " . strlen($paragrafo) . "<br>";
 
 ?>
 
-<h2>La parola da censurare è <?php echo $_GET['censura']  ?> </h2>
+<h2>La parola da censurare è: "<?php echo $_GET['censura']  ?>".</h2>
 
 <form action="" method="GET">
 <input style="width: 12%;" type="text" name="censura" placeholder="Inserisci la parola da censurare...">

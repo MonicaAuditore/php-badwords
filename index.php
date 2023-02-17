@@ -47,11 +47,19 @@ echo "Paragrafo originale: <br>";
 echo $paragrafo . "<br>";
 echo "Lunghezza paragrafo originale: " . strlen($paragrafo) . "<br>";
 
-// Recupero la parola da censurare dalla query string tramite $_GET
-$parola_censurata = $_GET["parola_censurata"];
+?>
 
-// Sostituisco la parola da censurare con tre asterischi es: http://localhost/php-badwords/index.php?parola_censurata=fuck
-$paragrafo_censurato = str_ireplace($parola_censurata, '***', $paragrafo);
+<h2>La parola da censurare è <?php echo $_GET['censura']  ?> </h2>
+
+<form action="" method="GET">
+<input style="width: 12%;" type="text" name="censura" placeholder="Inserisci la parola da censurare...">
+<button>Cerca</button>
+</form>
+<?php
+
+
+// Sostituisco la parola da censurare con tre asterischi 
+$paragrafo_censurato = str_ireplace($_GET['censura'], '***', $paragrafo);
 
 // Stampo il paragrafo censurato e la sua lunghezza
 echo "<br>Paragrafo censurato: <br>";

@@ -55,10 +55,5 @@ echo $paragrafo_censurato . "<br>";
 echo "Lunghezza paragrafo censurato: " . strlen($paragrafo_censurato);
 ?>
 
-
-
-
-
-
 </body>
 </html>
